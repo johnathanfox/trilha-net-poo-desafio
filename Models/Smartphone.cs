@@ -7,9 +7,11 @@ namespace DesafioPOO.Models
         private string IMEI { get; set; }
         private int Memoria { get; set; }
 
-        public Smartphone(string numero)
+        // Construtor da classe base. Ele será chamado pelas classes filhas.
+        public Smartphone(string numero, string modelo, string imei, int memoria)
         {
-            Numero = numero;     //parâmetros definidos
+             // Atribui os valores recebidos nos parâmetros às propriedades da classe.
+            Numero = numero;     
             Modelo = modelo;
             IMEI = imei;
             Memoria = memoria;
